@@ -1,0 +1,23 @@
+
+Post http://localhost:9001/employer     (employer register)
+
+Post http://localhost:9001/postjob       (employer post job)
+
+GET http://localhost:9001/jobsposted/{employerid}   (employer view jobs posted )
+ 
+Post http://localhost:9002/jobseeker    (jobseeker register )
+
+Post http://localhost:9002/resume    (jobseeker create resume )
+
+Post http://localhost:9002/applyjob/{jobSeekerId}/{resumeId}/{jobPostedId}  (jobseeker apply job)
+
+Post http://localhost:9002/jobsapplied/{jobseekerid}   (jobseeker view jobs applied )
+
+GET http://localhost:9001/showresumes/{eid}   (employer view submitted resumes)
+
+PUT http://localhost:9001/shortlistresume/{resumeid}/{status}  (employer short list resumes )
+
+GET http://localhost:9003/viewjobsposted/{industrytype}  (admin view jobs posted by industry type)
+
+DELETE http://localhost:9003/deletejobsbyexpirydate   (admin delete jobs posted by expiry date)
+

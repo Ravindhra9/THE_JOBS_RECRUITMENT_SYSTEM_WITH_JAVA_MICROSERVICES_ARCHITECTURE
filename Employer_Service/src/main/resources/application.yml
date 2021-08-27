@@ -1,0 +1,15 @@
+server:
+   port: 9001
+   
+spring:
+  application:
+    name: EMPLOYER-SERVICE
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url: 
+       default-Zone : http://localhost:8761/eureka/
+  instance:
+    hostname: localhost

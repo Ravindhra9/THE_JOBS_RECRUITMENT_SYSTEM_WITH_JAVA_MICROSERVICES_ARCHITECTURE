@@ -1,0 +1,11 @@
+{
+   "employerId" : 12,
+   "employerName" : "Manu Varma",
+   "companyName" : "UST",
+   "industries" : "IT,Finance",
+   "email": "manu.varma@ust.com",
+   "createPassword" : "Manu#1234",
+   "mobileNumber" : "9625789630",
+   "loginPeriod": "2021-09-28"
+}
+
