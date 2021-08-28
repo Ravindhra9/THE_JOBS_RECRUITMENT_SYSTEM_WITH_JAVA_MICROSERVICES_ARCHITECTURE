@@ -17,8 +17,7 @@ public class EmployerController {
 	@PostMapping("employer")
 	public Employer register(@RequestBody Employer e)
 	{
-		return eservice.register(e);
-		
+		return eservice.register(e);		
 	}
 
 }

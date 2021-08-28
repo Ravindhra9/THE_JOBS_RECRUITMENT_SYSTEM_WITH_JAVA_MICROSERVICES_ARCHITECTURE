@@ -2,6 +2,7 @@ package com.jobseeker_service.service;
 
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,7 +34,20 @@ public class JobsAppliedService {
 	
 	public String applyJob(Integer jobSeekerId,Integer resumeId, Integer jobPostedId) {
 		
+		
+		
 		JobsApplied japplied=new JobsApplied();
+		
+		try
+		{
+		japplied=jrepository.findByJobspostedId(jobPostedId);
+		
+		if(japplied != null) {
+			throw new IllegalArgumentException("The Job is already applied");
+		}
+		
+		}
+		catch (NoSuchElementException e) {
 		
 		japplied.setJobSeekerId(jobSeekerId);
 		japplied.setResumeId( resumeId);
@@ -65,6 +79,10 @@ public class JobsAppliedService {
 		
 		
 		resumesrepository.save(rjobseeker);
+		
+		return "applied";
+		
+		}
 		
 		return "applied";
 	}

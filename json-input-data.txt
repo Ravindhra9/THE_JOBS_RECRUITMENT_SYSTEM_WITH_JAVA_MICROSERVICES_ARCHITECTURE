@@ -9,3 +9,44 @@
    "loginPeriod": "2021-09-28"
 }
 
+{
+        "jobId": 25,
+        "jobTitle": "Front-End Developer",
+        "companyName": "Ust",
+        "salary": "30,000",
+        "skills": "Java,Html,CSS",
+        "experienceNeeded": "0",
+        "location": "Trivandrum",
+        "postedDate": "2021-08-24",
+        "expiryDate": "2021-09-24",
+        "employerId": 12,
+        "industryType": "IT"
+    }
+
+{
+    "jobSeekerId":"33",
+	"jobSeekerName":"Aby John",
+	 "jobSeekerEmail":"abyjohn15@gmail.com",
+	 "mobileNumber":"7526312568",
+	 "password":"AbyJ@1234",
+	"currentCity":"Kochi",
+	 "gender":"Male",
+	 "dateOfBirth":"1996-05-25"
+	
+}
+
+{
+    "resumeId" : 15,
+	"jobseekerName": "Aby John",
+	"jobseekerEmail" : "abyjohn15@gmail.com",
+	"highestQualification":"Graduation",
+	"course" : "Btech",
+	"specialization":"CSE",
+	"universityName":"MG",
+	"passingYear":"2020-06-11",
+	"skills":"C,c++",
+	"experiance":"1",
+	"jobSeekerId":33,
+	"visitorsCount":0
+}
+

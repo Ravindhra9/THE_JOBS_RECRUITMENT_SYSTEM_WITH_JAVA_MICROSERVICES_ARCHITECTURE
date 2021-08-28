@@ -2,6 +2,7 @@ package com.employer_service.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,11 +16,26 @@ public class JobsPostedService {
 	@Autowired
 	JobsPostedRepository jrepository;
 	
+	JobsPosted jposted;
+	
 	public JobsPosted postJob(JobsPosted j) {
+		
+         try {
+			
+			jposted=jrepository.findById(j.getJobId()).get();
+			
+			if(jposted != null) {
+				throw new IllegalArgumentException("The Job is already posted");
+			}
+		}
+		catch (NoSuchElementException e) {
+			return jrepository.save(j);
+		}
 		
 		return jrepository.save(j);
 	}
 
+	
 	public List<JobsPosted> getJobsPostedByEmployer(Integer employerId) {
 		
         List<JobsPosted> jposted=jrepository.findAll();

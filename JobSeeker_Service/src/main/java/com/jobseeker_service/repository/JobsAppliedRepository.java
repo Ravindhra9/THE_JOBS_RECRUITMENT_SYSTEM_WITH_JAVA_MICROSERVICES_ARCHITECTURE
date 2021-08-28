@@ -7,6 +7,6 @@ import com.jobseeker_service.entity.JobsApplied;
 
 @Repository
 public interface JobsAppliedRepository extends JpaRepository<JobsApplied, Integer>{
-
-
+	
+	public JobsApplied findByJobspostedId(Integer jobspostedid);
 }
