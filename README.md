@@ -1,3 +1,3 @@
 # THE_TOPJOBS_RECRUITMENT
 
-This is Medium between Employer and JobSeeker. The employer will post the job requirements. JobSeeker will apply to it.
+In order to mediate between Employer and JobSeeker, this application will be used. The job specifications will be posted by the employer. JobSeeker will use it to apply.
